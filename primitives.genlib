@@ -1,0 +1,39 @@
+# 2-input logic function primitives
+# Pierre-Emmanuel Gaillardon
+
+GATE     ZERO_0_1       1.00   Y=CONST0;
+GATE      ONE_0_1       1.00   Y=CONST1;
+GATE     INV1_1_1       1.00   Y=!A;
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     BUF1_1_1       1.00   Y=A;
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     AND2_2_1       1.00   Y=A*B;
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE    NAND2_2_1       1.00   Y=!(A*B);
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE      OR2_2_1       1.00   Y=A+B;
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     NOR2_2_1       1.00   Y=!(A+B);
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     NOTAND2_2_1    1.00   Y=!A+B;
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     ANDNOT2_2_1    1.00   Y=A+!B;
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     NOTOR2_2_1     1.00   Y=!A+B;
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     ORNOT2_2_1     1.00   Y=A+!B;
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     XOR2_2_1       1.00   Y=(!A.B)+(A.!B);
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+GATE     XNOR2_2_1      1.00   Y=(A.B)+(!A.!B);
+    PIN         A    UNKNOWN      1    999   1.00   0.00   1.00   0.00
+    PIN         B    UNKNOWN      1    999   1.00   0.00   1.00   0.00
